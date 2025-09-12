@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app.py:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app.py:latest #this will create the repo (username/app) if it doesn't exist, and then the most recent image pushed will get the latest tag
