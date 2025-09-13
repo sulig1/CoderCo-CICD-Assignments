@@ -24,6 +24,6 @@ variable "access_key" {
 
 variable "secret_key" {
     description = "aws user secret key"
-    default = ""
+    
   
 }
