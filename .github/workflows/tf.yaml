@@ -17,5 +17,4 @@ jobs:
       uses: hashicorp/setup-terraform@v3
 
     - name: check terraform formatting 
-      run: terraform fmt -check -recursive
-  
+      run: terraform fmt -check 
