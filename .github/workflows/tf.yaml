@@ -1,0 +1,21 @@
+name: Terraform Workflow
+
+on: 
+  push: 
+    branches: 
+      - 'master'
+
+job: 
+  build: 
+    runs-on: ubuntu-latest 
+
+    steps: 
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: install terraform 
+      uses: hashicorp/setup-terraform@v3
+
+    - name: check terraform formatting 
+      run: terraform fmt -check -recursive
+  
