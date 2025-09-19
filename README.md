@@ -4,7 +4,7 @@ This is a small project to practice setting up CI/CD pipelines using GitHub Acti
 
 ## Workflows
 
-### 1. Build and Push to DockerHub
+### 1. Build and Push to DockerHub (CI.YAML)
 **Trigger:** Runs on every push to the `master` branch.  
 
 **Steps:**
@@ -14,10 +14,11 @@ This is a small project to practice setting up CI/CD pipelines using GitHub Acti
 
 ---
 
-### 2. Terraform Formatting Check
+### 2. Terraform Formatting Check (TF.YAML)
 **Trigger:** Runs on every push to the `master` branch.  
 
 **Steps:**
 - Checkout repository  
 - Install Terraform  
 - Run `terraform fmt -check` to ensure Terraform files are properly formatted  
+
